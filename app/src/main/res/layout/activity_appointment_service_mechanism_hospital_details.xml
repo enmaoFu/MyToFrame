@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_bar_public">
+
+        <include layout="@layout/public_title_public" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/mechanism_doctor_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:src="@mipmap/ls2"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="西南医院"
+                        android:textSize="16sp"
+                        android:textColor="#333333"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="重庆市沙坪坝高滩岩正街30号大神大神"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="12sp"
+                        android:maxEms="12"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/doctor_details_appointment"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="立即预约"
+                        android:textColor="#ffffff"
+                        android:background="#FDA045"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/doctor_inspect_evaluate_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/doctor_inspect_content_re">
+
+                <LinearLayout
+                    android:id="@+id/doctor_inspect_evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="25dp"
+                        android:background="#45CDA4"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="患者评价"
+                        android:textSize="15sp"
+                        android:textColor="#2D2D2D"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <com.yy.my.to.views.LyListView
+                    android:id="@+id/mechanism_hospital_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/doctor_inspect_evaluate">
+                </com.yy.my.to.views.LyListView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

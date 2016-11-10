@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:minHeight="80dp"
+    android:background="#ffffff">
+
+    <com.yy.my.to.views.LyRoundImageView
+        android:id="@+id/doctor_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/ls"
+        app:roundHeight="30dp"
+        app:roundWidth="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/doctor_head">
+
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三丰"
+            android:textSize="16sp"
+            android:textColor="#363636"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/doctor_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主治医师"
+            android:layout_toRightOf="@+id/doctor_name"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="#363636"
+            android:layout_marginTop="2.5dp"/>
+
+        <TextView
+            android:id="@+id/doctor_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="沙坪坝区新桥医院"
+            android:textSize="15sp"
+            android:layout_below="@+id/doctor_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#4C4C4C"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/doctor_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 88"
+            android:textSize="16sp"
+            android:textColor="#40C7C0"/>
+
+        <TextView
+            android:id="@+id/doctor_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_price"
+            android:text="200m"
+            android:textSize="12sp"
+            android:textColor="#969696"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

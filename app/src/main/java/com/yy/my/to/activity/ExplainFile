@@ -1,0 +1,5 @@
+此文件为说明文件
+appointment：此包为预约服务模块，具体分为预约上门和预约医疗机构
+archives：此包为健康档案模块
+consultation：此包为健康咨询模块
+personal：此包为个人中心模块

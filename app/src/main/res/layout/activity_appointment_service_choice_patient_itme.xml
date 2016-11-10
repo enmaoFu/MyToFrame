@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/listview_itme_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="康蕾"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/listview_itme_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="女"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/listview_itme_name"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/listview_itme_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20岁"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_toRightOf="@+id/listview_itme_sex"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/listview_itme_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500xxxxxxxxxx002"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/listview_itme_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/listview_itme_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设为默认"
+        android:textSize="14sp"
+        android:textColor="#43CDA4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/listview_itme_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="185xxxx6856"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_below="@+id/listview_itme_flag"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_bar_public">
+
+        <include layout="@layout/public_title_public" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_remind"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="我的标签(最多5个) "
+                    android:textSize="16dp" />
+
+                <com.yy.my.to.views.FlowLayout
+                    android:id="@+id/tcy_my_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    custom:horizontalSpacing="6dp"
+                    custom:verticalSpacing="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#f6f6f6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="15dp"
+                         android:text="推荐标签 "
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f6f6f6" />
+
+                <com.yy.my.to.views.FlowLayout
+                    android:id="@+id/tcy_hot_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    custom:horizontalSpacing="6dp"
+                    custom:verticalSpacing="12dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--<com.fyales.tagcloud.library.TagCloudLayout
+        android:id="@+id/symptom_lable_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tagSpacing="15dp"
+        app:lineSpacing="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="手动添加"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:background="#43CEA4"/>-->
+
+</LinearLayout>

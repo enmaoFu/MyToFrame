@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yy.my.to">
+
+    <!-- 地图包、搜索包、定位包、导航包需要的基础权限 -->
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--用于获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--高德地图服务必须有！否则定位时候报错误，错误代码10-->
+        <service android:name="com.amap.api.location.APSService"></service>
+
+        <!-- 高德地图的Key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="fb81c599404ecd7cf01336701ebdc6cd"/>
+
+
+        <!-- 预约服务 -->
+        <!-- 预约服务主页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约上门服务填写资料页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceFillDateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约服务选择问诊人通用页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceiChoicePatientActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约服务添加修改问诊人通用页面（查看问诊人详情） -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceAddPatientActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约服务选择症状的通用标签页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceSymptomLableActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约上门服务选择医生页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceSelectDoctorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约上门服务选择医生页面医生详情页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceDoctorDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约上门服务确认预约页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceConfirmAppointmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约服务医疗机构填写资料页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceMechanismFillDateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约服务医疗机构选择医院页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceMechanismSelectHospitalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约服务医疗机构医院详情页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmentServiceMechanismHospitalDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 预约服务定位页面 -->
+        <activity
+            android:name=".activity.appointment.AppointmenServiceMapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <!-- 健康档案 -->
+
+        <!-- 健康咨询 -->
+
+        <!-- 个人中心 -->
+        <!-- 个人中心页面 -->
+        <activity
+            android:name=".activity.personal.PersonalCenterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 个人中心设置页面 -->
+        <activity
+            android:name=".activity.personal.PersonSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 个人中心设置关于我们页面 -->
+        <activity
+            android:name=".activity.personal.PersonSettingAboutUsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

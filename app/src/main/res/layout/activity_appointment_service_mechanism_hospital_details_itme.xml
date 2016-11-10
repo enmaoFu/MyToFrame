@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:minHeight="140dp"
+    android:background="#ffffff"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/mechanism_hospital_details_itme_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="#666666"/>
+
+    <!--限定50个字-->
+    <TextView
+        android:id="@+id/mechanism_hospital_details_itme_text"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/mechanism_hospital_details_itme_phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:paddingBottom="10dp"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:id="@+id/mechanism_hospital_details_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:minHeight="80dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/mechanism_select_hospital_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/ls1"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/mechanism_select_hospital_head"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mechanism_select_hospital_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重庆市西南医院"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:textColor="#303030"/>
+
+            <TextView
+                android:id="@+id/mechanism_select_hospital_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/mechanism_select_hospital_title"
+                android:text="三甲"
+                android:textSize="13sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mechanism_select_hospital_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重庆市沙坪坝高滩岩正街30号"
+            android:layout_alignParentBottom="true"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="#686868"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/mechanism_select_hospital_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200m"
+            android:textSize="13sp"
+            android:textColor="#333333"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

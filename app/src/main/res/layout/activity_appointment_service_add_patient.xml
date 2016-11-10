@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_bar_public">
+
+        <include layout="@layout/public_title_public" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textSize="14sp"
+            android:textColor="#393939"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <com.yy.my.to.views.LimitEditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:hint="请输入真实姓名"
+            android:gravity="center_vertical|right"
+            android:inputType="text"
+            android:maxLength="5"
+            android:textColor="#9C9C9C"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+        <View
+            android:layout_height="1px"
+            android:background="#E3E3E3"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别"
+            android:textColor="#393939"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/appointment_serivce_add_patient_sex_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_personal_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="必填"
+            android:layout_toLeftOf="@id/appointment_serivce_add_patient_sex_img"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"/>
+
+        <View
+            android:layout_height="1px"
+            android:background="#E3E3E3"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        </View>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄"
+            android:textColor="#393939"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:hint="请填入真实年龄"
+            android:gravity="center_vertical|right"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="#9C9C9C"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+        <View
+            android:layout_height="1px"
+            android:background="#E3E3E3"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        </View>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textSize="14sp"
+            android:textColor="#393939"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:hint="用于接收预约成功短信"
+            android:gravity="center_vertical|right"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="#9C9C9C"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+        <View
+            android:layout_height="1px"
+            android:background="#E3E3E3"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        </View>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证"
+            android:textSize="14sp"
+            android:textColor="#393939"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:hint="请输入真实身份证号"
+            android:gravity="center_vertical|right"
+            android:inputType="number"
+            android:maxLength="18"
+            android:textColor="#9C9C9C"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设为默认就诊人"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:textColor="#FF993E"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

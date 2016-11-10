@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_bar_public"
+        android:orientation="vertical">
+
+        <include layout="@layout/public_title_public" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/confirm_appointment_bom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4D4D4D"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/confirm_appointment_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计："
+            android:textSize="15sp"
+            android:textColor="#FE9E48"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥88"
+            android:textColor="#FE9E48"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/confirm_appointment_total"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_appointment_service_confirm_appointment_but"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="确定预约"
+            android:textSize="14sp"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/lin"
+        android:layout_above="@+id/confirm_appointment_bom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#ffffff">
+
+                <com.yy.my.to.views.LyRoundImageView
+                    android:id="@+id/confirm_appointment_head"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/ls"
+                    app:roundHeight="25dp"
+                    app:roundWidth="25dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/confirm_appointment_head"
+                    android:layout_marginLeft="15dp">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/confirm_appointment_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="张三丰"
+                            android:textSize="15sp"
+                            android:textColor="#333333"/>
+
+                        <TextView
+                            android:id="@+id/confirm_appointment_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="主治医师"
+                            android:textSize="12sp"
+                            android:textColor="#383838"
+                            android:layout_toRightOf="@id/confirm_appointment_name"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上门基础检查身体"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="15sp"
+                        android:textColor="#686868"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:id="@+id/doctor_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥ 88"
+                        android:textSize="16sp"
+                        android:textColor="#40C7C0"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+
+                <View
+                    android:id="@+id/confirm_appointment_green"
+                    android:layout_width="6dp"
+                    android:layout_height="20dp"
+                    android:background="#45CDA4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/confirm_appointment_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预约信息"
+                    android:textSize="15sp"
+                    android:textColor="#333333"
+                    android:layout_toRightOf="@+id/confirm_appointment_green"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/confirm_appointment_green"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="时间"
+                        android:textSize="14sp"
+                        android:textColor="#2E2E2E"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-01-01"
+                        android:textSize="14sp"
+                        android:textColor="#676767"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-03-03"
+                        android:textSize="14sp"
+                        android:textColor="#676767"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DEDEDE"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="类型"
+                        android:textSize="14sp"
+                        android:textColor="#2E2E2E"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上门诊疗"
+                        android:textSize="14sp"
+                        android:textColor="#676767"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DEDEDE"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名"
+                        android:textSize="14sp"
+                        android:textColor="#2E2E2E"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张三"
+                        android:textSize="14sp"
+                        android:textColor="#676767"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DEDEDE"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电话"
+                        android:textSize="14sp"
+                        android:textColor="#2E2E2E"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13459626589"
+                        android:textSize="14sp"
+                        android:textColor="#676767"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DEDEDE"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地址"
+                        android:textSize="14sp"
+                        android:textColor="#2E2E2E"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="沙坪坝区大学城虎溪富力城一期1栋12-3"
+                        android:textSize="14sp"
+                        android:textColor="#676767"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+
+                <View
+                    android:id="@+id/confirm_appointment_green_bom"
+                    android:layout_width="6dp"
+                    android:layout_height="20dp"
+                    android:background="#45CDA4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/confirm_appointment_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查内容"
+                    android:textSize="15sp"
+                    android:textColor="#333333"
+                    android:layout_toRightOf="@+id/confirm_appointment_green_bom"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="半冷半暖秋天 熨帖在你身边静静看着流光飞舞那风中一片片红叶 惹心中一片绵绵半醉半醒之间 再忍笑眼千千就让我像云中飘雪用冰清轻轻吻人脸 带出一波一浪的缠绵留人间多少爱 迎浮生千重变跟有情人做快乐事 别问是劫是缘像柳丝像春风 伴着你过春天"
+                    android:textSize="14sp"
+                    android:textColor="#676767"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_below="@+id/confirm_appointment_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

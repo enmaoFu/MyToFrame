@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_appointment_service_choice"
+            android:orientation="vertical">
+
+            <include layout="@layout/public_title_public" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="日"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="一"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="二"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="三"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="四"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="五"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="六"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <ViewFlipper
+                android:id="@+id/flipper1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/choice_patient_re"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="患者"
+                android:textSize="14sp"
+                android:textColor="#9C9C9C"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/appointment_service_choice_patient_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_personal_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/appointment_service_choice_age_patient_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23岁"
+                android:textColor="#363636"
+                android:textSize="12sp"
+                android:layout_toLeftOf="@+id/appointment_service_choice_patient_img"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:id="@+id/appointment_service_choice_sex_patient_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="12sp"
+                android:textColor="#363636"
+                android:layout_toLeftOf="@+id/appointment_service_choice_age_patient_text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="康蕾"
+                android:textColor="#363636"
+                android:textSize="14sp"
+                android:layout_toLeftOf="@+id/appointment_service_choice_sex_patient_text"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"/>
+
+            <View
+                android:layout_height="1px"
+                android:background="#E3E3E3"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp">
+            </View>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/appointment_service_choice_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间段"
+                android:textSize="14sp"
+                android:textColor="#9C9C9C"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/appointment_service_choice_date_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_personal_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/appointment_service_choice_date_img"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/appointment_service_date_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="开始时间"
+                    android:textColor="#363636"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textColor="#363636"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"/>
+
+                <TextView
+                    android:id="@+id/appointment_service_date_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="结束时间"
+                    android:textColor="#363636"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1px"
+                android:background="#E3E3E3"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp">
+            </View>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/appointment_service_fill_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上门地址"
+                android:textSize="14sp"
+                android:textColor="#9C9C9C"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_personal_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+
+            <View
+                android:layout_height="1px"
+                android:background="#E3E3E3"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp">
+            </View>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="详细地址（如门牌号等）"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                android:textColor="#9C9C9C"
+                android:layout_centerVertical="true"
+                android:background="@null"/>
+
+            <View
+                android:layout_height="1px"
+                android:background="#E3E3E3"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp">
+            </View>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/appointment_service_fill_date_re"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="症状"
+                android:textSize="16sp"
+                android:textColor="#9C9C9C"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_personal_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+            <View
+                android:layout_height="1px"
+                android:background="#E3E3E3"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp">
+            </View>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/appointment_service_fill_date_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:background="@drawable/shape_personal_out_but"/>
+
+</RelativeLayout>

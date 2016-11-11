@@ -1,4 +1,4 @@
-package com.yy.my.to.activity.appointment;
+package com.yy.my.to.activity.currency;
 
 import android.content.Intent;
 import android.view.View;
@@ -17,11 +17,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 预约服务选择问诊人通用页面
+ * 通用的选择问诊人(家人、问诊人)页面
  * @author enmaoFu
  * @date 2016年10月17日
  */
-public class AppointmentServiceiChoicePatientActivity extends BaseActivity implements View.OnClickListener{
+public class CurrencySelectMyFamilyActivity extends BaseActivity implements View.OnClickListener{
 
     private ImageView left_img;//标题栏返回
 
@@ -52,12 +52,12 @@ public class AppointmentServiceiChoicePatientActivity extends BaseActivity imple
         center_text = (TextView)findViewById(R.id.center_text);
         right_text = (TextView)findViewById(R.id.right_text);
         appointment_service_fill_data_patient_listview = (ListView)findViewById(R.id.appointment_service_fill_data_patient_listview);
-        appointmentServiceFillDataPatientAdapter = new AppointmentServiceChoicePatientAdapter(AppointmentServiceiChoicePatientActivity.this);
+        appointmentServiceFillDataPatientAdapter = new AppointmentServiceChoicePatientAdapter(CurrencySelectMyFamilyActivity.this);
         appointment_service_fill_data_patient_listview.setAdapter(appointmentServiceFillDataPatientAdapter);
         appointment_service_fill_data_patient_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                intent.setClass(AppointmentServiceiChoicePatientActivity.this,AppointmentServiceAddPatientActivity.class);
+                intent.setClass(CurrencySelectMyFamilyActivity.this,CurrenyAddMyFamilyActivity.class);
                 startActivity(intent);
             }
         });
@@ -83,7 +83,7 @@ public class AppointmentServiceiChoicePatientActivity extends BaseActivity imple
         center_text.setVisibility(View.VISIBLE);
         left_img.setVisibility(View.VISIBLE);
         right_text.setVisibility(View.VISIBLE);
-        center_text.setText("我的问诊人");
+        center_text.setText("我的家人");
         left_img.setImageResource(R.mipmap.ic_back);
         right_text.setText("添加");
     }
@@ -100,7 +100,7 @@ public class AppointmentServiceiChoicePatientActivity extends BaseActivity imple
                 backView();
                 break;
             case R.id.right_text:
-                intent.setClass(AppointmentServiceiChoicePatientActivity.this,AppointmentServiceAddPatientActivity.class);
+                intent.setClass(CurrencySelectMyFamilyActivity.this,CurrenyAddMyFamilyActivity.class);
                 startActivity(intent);
                 break;
         }
@@ -114,9 +114,9 @@ public class AppointmentServiceiChoicePatientActivity extends BaseActivity imple
 
         AppointmentServiceChoicePatientEntity appointmentServiceFillDataPatientEntity = null;
 
-        for(int i = 0; i < 20; i++){
+        for(int i = 0; i < 5; i++){
 
-            appointmentServiceFillDataPatientEntity = new AppointmentServiceChoicePatientEntity("张三","女","20","500xxxxxxxxxx002","默认","185xxxx6856");
+            appointmentServiceFillDataPatientEntity = new AppointmentServiceChoicePatientEntity("张三","女","20","500xxxxxxxxxx002","默认问诊人","185xxxx6856");
 
             appointmentServiceFillDataPatientEntityList.add(appointmentServiceFillDataPatientEntity);
 

@@ -45,6 +45,19 @@
             android:name="com.amap.api.v2.apikey"
             android:value="fb81c599404ecd7cf01336701ebdc6cd"/>
 
+        <!-- 通用的选择问诊人(家人、问诊人)页面 -->
+        <activity
+            android:name=".activity.currency.CurrencySelectMyFamilyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 通用的添加修改家人页面（查看家人、问诊人详情） -->
+        <activity
+            android:name=".activity.currency.CurrenyAddMyFamilyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
 
         <!-- 预约服务 -->
         <!-- 预约服务主页面 -->
@@ -57,20 +70,6 @@
         <!-- 预约上门服务填写资料页面 -->
         <activity
             android:name=".activity.appointment.AppointmentServiceFillDateActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait">
-        </activity>
-
-        <!-- 预约服务选择问诊人通用页面 -->
-        <activity
-            android:name=".activity.appointment.AppointmentServiceiChoicePatientActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait">
-        </activity>
-
-        <!-- 预约服务添加修改问诊人通用页面（查看问诊人详情） -->
-        <activity
-            android:name=".activity.appointment.AppointmentServiceAddPatientActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>

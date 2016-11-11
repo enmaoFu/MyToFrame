@@ -7,6 +7,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.yy.my.to.R;
+import com.yy.my.to.activity.appointment.AppointmentServiceFillDateActivity;
+import com.yy.my.to.activity.currency.CurrencySelectMyFamilyActivity;
 import com.yy.my.to.base.BaseActivity;
 import com.yy.my.to.utils.ImmersedStatusbarUtils;
 
@@ -23,6 +25,7 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
     private Intent intent = new Intent();//意图
 
     private RelativeLayout person_setting_re;//设置
+    private RelativeLayout person_my_family_re;//我的家人
 
     /**
      * 初始化视图
@@ -40,8 +43,10 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
         center_text = (TextView)findViewById(R.id.center_text);
         left_img = (ImageView)findViewById(R.id.left_img);
         person_setting_re = (RelativeLayout)findViewById(R.id.person_setting_re);
+        person_my_family_re = (RelativeLayout)findViewById(R.id.person_my_family_re);
         left_img.setOnClickListener(this);
         person_setting_re.setOnClickListener(this);
+        person_my_family_re.setOnClickListener(this);
     }
 
     /**
@@ -77,6 +82,10 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
                 break;
             case R.id.person_setting_re:
                 intent.setClass(PersonalCenterActivity.this,PersonSettingActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.person_my_family_re:
+                intent.setClass(PersonalCenterActivity.this,CurrencySelectMyFamilyActivity.class);
                 startActivity(intent);
                 break;
         }

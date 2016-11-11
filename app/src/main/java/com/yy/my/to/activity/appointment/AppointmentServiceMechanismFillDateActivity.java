@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import com.yy.my.to.R;
+import com.yy.my.to.activity.currency.CurrencySelectMyFamilyActivity;
 import com.yy.my.to.adapters.appointment.AppointmentServiceMechanismFillDateAdapter;
 import com.yy.my.to.base.BaseActivity;
 import com.yy.my.to.utils.ImmersedStatusbarUtils;
@@ -146,7 +147,7 @@ public class AppointmentServiceMechanismFillDateActivity extends BaseActivity im
                 backView();
                 break;
             case R.id.choice_patient_re:
-                intent.setClass(AppointmentServiceMechanismFillDateActivity.this,AppointmentServiceiChoicePatientActivity.class);
+                intent.setClass(AppointmentServiceMechanismFillDateActivity.this,CurrencySelectMyFamilyActivity.class);
                 startActivity(intent);
                 break;
             case R.id.appointment_service_mechoice_fill_date_re:

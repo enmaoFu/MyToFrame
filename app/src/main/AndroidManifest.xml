@@ -156,6 +156,14 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
+
+        <!-- 个人中心通用的预约订单状态主页面 -->
+        <activity
+            android:name=".activity.personal.PersonOrderStatusPublicActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
     </application>
 
 </manifest>

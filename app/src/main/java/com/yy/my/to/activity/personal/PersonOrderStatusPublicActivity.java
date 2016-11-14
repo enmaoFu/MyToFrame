@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import com.yy.my.to.R;
 import com.yy.my.to.base.BaseFragmentActivity;
-import com.yy.my.to.fragments.personal.PersonOderStatusDocterFragment;
-import com.yy.my.to.fragments.personal.PersonOderStatusMedicalInstitutionFragment;
+import com.yy.my.to.fragments.personal.PersonOrderStatusDocterFragment;
+import com.yy.my.to.fragments.personal.PersonOrderStatusMedicalInstitutionFragment;
 import com.yy.my.to.utils.ImmersedStatusbarUtils;
 
 /**
@@ -32,8 +32,8 @@ public class PersonOrderStatusPublicActivity extends BaseFragmentActivity implem
     private int alreadyClickTextColor;//菜单字体颜色 已点击
 
     private FrameLayout content_frame;
-    private PersonOderStatusDocterFragment posdFragment;//医生fragemnt
-    private PersonOderStatusMedicalInstitutionFragment posmiFragment;//医疗机构fragment
+    private PersonOrderStatusDocterFragment posdFragment;//医生fragemnt
+    private PersonOrderStatusMedicalInstitutionFragment posmiFragment;//医疗机构fragment
     private FragmentManager fm;
 
     /**
@@ -150,7 +150,7 @@ public class PersonOrderStatusPublicActivity extends BaseFragmentActivity implem
         switch (postion) {
             case 0:
                 if(posdFragment == null){
-                    posdFragment = new PersonOderStatusDocterFragment();
+                    posdFragment = new PersonOrderStatusDocterFragment();
                     //Activity传递数据到指定的Fragment
                     /*asmwFragment.setArguments(bundle);
                     bundle.putString("poiName", poiName);
@@ -167,7 +167,7 @@ public class PersonOrderStatusPublicActivity extends BaseFragmentActivity implem
 
             case 1:
                 if(posmiFragment == null){
-                    posmiFragment = new PersonOderStatusMedicalInstitutionFragment();
+                    posmiFragment = new PersonOrderStatusMedicalInstitutionFragment();
                     ft.replace(R.id.content_frame, posmiFragment);
                 }else{
                     ft.replace(R.id.content_frame, posmiFragment);

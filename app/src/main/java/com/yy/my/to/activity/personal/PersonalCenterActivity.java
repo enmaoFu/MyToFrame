@@ -29,6 +29,7 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
     private RelativeLayout complete;//已完成
     private RelativeLayout not_complete;//未完成
     private RelativeLayout wait_for_evaluate;//待评价
+    private RelativeLayout person_my_follow_re;//我的关注
 
     /**
      * 默认key
@@ -59,6 +60,7 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
         complete = (RelativeLayout)findViewById(R.id.complete);
         not_complete = (RelativeLayout)findViewById(R.id.not_complete);
         wait_for_evaluate = (RelativeLayout)findViewById(R.id.wait_for_evaluate);
+        person_my_follow_re = (RelativeLayout)findViewById(R.id.person_my_follow_re);
         left_img.setOnClickListener(this);
         person_setting_re.setOnClickListener(this);
         person_my_family_re.setOnClickListener(this);
@@ -66,6 +68,7 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
         complete.setOnClickListener(this);
         not_complete.setOnClickListener(this);
         wait_for_evaluate.setOnClickListener(this);
+        person_my_follow_re.setOnClickListener(this);
     }
 
     /**
@@ -125,6 +128,10 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
             case R.id.wait_for_evaluate:
                 intent.setClass(PersonalCenterActivity.this,PersonOrderStatusPublicActivity.class);
                 intent.putExtra("key",TO_BE_EVALUATED);
+                startActivity(intent);
+                break;
+            case R.id.person_my_follow_re:
+                intent.setClass(PersonalCenterActivity.this,PersonMyFollowActivity.class);
                 startActivity(intent);
                 break;
         }

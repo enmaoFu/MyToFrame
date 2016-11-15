@@ -7,13 +7,13 @@ package com.yy.my.to.entitys.personal;
  */
 public class PersonOrderStatusDocterMechanismEntity {
 
-    private int person_order_mechanism_img;//医生头像
+    private int person_order_mechanism_img;//机构头像
 
-    private String person_order_mechanism_name;//医生名字
+    private String person_order_mechanism_name;//机构名字
 
-    private String person_order_mechanism_title;//医生职称
+    private String person_order_mechanism_title;//机构等级
 
-    private String person_order_mechanism_title_address;//医生所在医院
+    private String person_order_mechanism_title_address;//机构所在地址
 
     public PersonOrderStatusDocterMechanismEntity(int person_order_mechanism_img, String person_order_mechanism_name, String person_order_mechanism_title, String person_order_mechanism_title_address) {
         this.person_order_mechanism_img = person_order_mechanism_img;

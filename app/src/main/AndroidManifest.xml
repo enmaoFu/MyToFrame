@@ -164,6 +164,13 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <!-- 个人中心我的关注主页面 -->
+        <activity
+            android:name=".activity.personal.PersonMyFollowActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
     </application>
 
 </manifest>

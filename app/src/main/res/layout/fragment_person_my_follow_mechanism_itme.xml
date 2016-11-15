@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:minHeight="80dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/person_my_follow_mechanism_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/ls1"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/person_my_follow_mechanism_img"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/person_my_follow_mechanism_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重庆市沙坪坝区高滩岩1号"
+            android:layout_alignParentBottom="true"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="#686868"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/person_my_follow_mechanism_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西南医院"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:textColor="#303030"/>
+
+            <TextView
+                android:id="@+id/person_my_follow_mechanism_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/mechanism_select_hospital_title"
+                android:text="三甲"
+                android:textSize="13sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="10dp"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:text="去评价"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#42CDA5"
+            android:background="@drawable/shape_person_my_follow_mechanism_but_style"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

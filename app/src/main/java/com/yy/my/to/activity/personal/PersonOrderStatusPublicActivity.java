@@ -16,7 +16,7 @@ import com.yy.my.to.fragments.personal.PersonOrderStatusMedicalInstitutionFragme
 import com.yy.my.to.utils.ImmersedStatusbarUtils;
 
 /**
- * 通用的预约订单状态主页面
+ * 个人中心通用的预约订单状态主页面
  * @author enmaoFu
  * @date 2016年11月14日
  */

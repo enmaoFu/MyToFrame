@@ -209,6 +209,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/person_my_follow_re"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="#ffffff">

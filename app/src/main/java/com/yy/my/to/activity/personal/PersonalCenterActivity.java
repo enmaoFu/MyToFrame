@@ -2,11 +2,13 @@ package com.yy.my.to.activity.personal;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.yy.my.to.R;
+import com.yy.my.to.activity.LoginActivity;
 import com.yy.my.to.activity.currency.CurrencySelectMyFamilyActivity;
 import com.yy.my.to.base.BaseActivity;
 import com.yy.my.to.utils.ImmersedStatusbarUtils;
@@ -30,6 +32,7 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
     private RelativeLayout not_complete;//未完成
     private RelativeLayout wait_for_evaluate;//待评价
     private RelativeLayout person_my_follow_re;//我的关注
+    private Button but;//退出按钮（暂时用来测试登陆页面）
 
     /**
      * 默认key
@@ -61,6 +64,7 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
         not_complete = (RelativeLayout)findViewById(R.id.not_complete);
         wait_for_evaluate = (RelativeLayout)findViewById(R.id.wait_for_evaluate);
         person_my_follow_re = (RelativeLayout)findViewById(R.id.person_my_follow_re);
+        but = (Button)findViewById(R.id.but);
         left_img.setOnClickListener(this);
         person_setting_re.setOnClickListener(this);
         person_my_family_re.setOnClickListener(this);
@@ -69,6 +73,7 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
         not_complete.setOnClickListener(this);
         wait_for_evaluate.setOnClickListener(this);
         person_my_follow_re.setOnClickListener(this);
+        but.setOnClickListener(this);
     }
 
     /**
@@ -132,6 +137,10 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
                 break;
             case R.id.person_my_follow_re:
                 intent.setClass(PersonalCenterActivity.this,PersonMyFollowActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.but:
+                intent.setClass(PersonalCenterActivity.this,LoginActivity.class);
                 startActivity(intent);
                 break;
         }
